@@ -41,7 +41,7 @@ let blue = (colors) ? chalk.bold.blue : (traceMessage) => traceMessage;
  */
 let endsSuccessfully = (successMessage) => {
     process.stdout.write(green('[npm-package-checker] OK :: ' + successMessage + '\n'));
-    process.exit = 0;  // Ok  
+    process.exitCode = 0;  // Ok  
 };
 
 /**
@@ -50,7 +50,7 @@ let endsSuccessfully = (successMessage) => {
  */
 let endsWithFailure = (errorMessage) => {
     process.stderr.write(red('[npm-package-checker] Error :: ' + errorMessage + '\n'));
-    process.exit = 1;  // Error  
+    process.exitCode = 1;  // Error  
 };
 
 /**
