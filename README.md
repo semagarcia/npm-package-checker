@@ -25,19 +25,19 @@ __npm-package-checker__ has some parameters, which two of them are mandatories a
 #### Required params
 The required parameters are:
 | Param         | Short | Purpose | 
-| ------------- |:-----:| ------- |
+| ---           | :---: |   ---   |
 | --repoUrl     | -r    | The URL of NPM repository (Nexus, Artifactory...) |
 | --tag         | -t    | The TAG of component to be checked if it has been published or not |
 #### Optionals params
 The optionals parameters are:
 | Param         | Short | Meaning | 
-| ------------- |:-----:| ------- |
+| ---           | :---: |   ---   |
 | --debug       | -d    | Show detailed info about the progress |
 | --colors      | -c    | Show color traces |
 #### Other params
 The util parameters are:
 | Param         | Short | Meaning | 
-| ------------- |:-----:| ------- |
+| ---           | :---: |   ---   |
 | --help        | -h    | Show command-util help |
 | --version     |       | Show version number |
 
