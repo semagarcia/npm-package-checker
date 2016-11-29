@@ -1,0 +1,39 @@
+{
+  "name": "npm-package-checker",
+  "version": "1.0.0",
+  "homepage": "",
+  "author": {
+    "name": "Sema (José Manuel García)",
+    "email": "jmanuelgarciagarcia@gmail.com"
+  },
+  "description": "Module to check whether a component has been released with a specific version or not",
+  "keywords": [
+    "command-line",
+    "tool",
+    "util",
+    "npm",
+    "package",
+    "version",
+    "check"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semagarcia/npm-package-checker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/semagarcia/npm-package-checker/issues"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "ISC",
+  "preferGlobal": true,
+  "devDependencies": {
+    "chalk": "^1.1.3",
+    "request": "^2.79.0",
+    "yargs": "^6.4.0"
+  },
+  "bin": {
+    "npm-package-checker": "index.js"
+  }
+}
