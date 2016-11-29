@@ -4,6 +4,7 @@ A command-line tool to verify if a package has been released in a repository (su
 - [Super simple to use](#simple-to-use)
 - [Usage from command-line](#usage-command-line)
 - [Usage from continuous integration](#usage-ci)
+
 ---
 
 ## Super simple to use
