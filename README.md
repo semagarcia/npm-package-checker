@@ -1,9 +1,9 @@
 # npm-package-checker
 A command-line tool to verify if a package has been released in a repository (such as Nexus, Artifactory, ...).
 ## Table of contents
-- [Super simple to use](#simple-to-use)
-- [Usage from command-line](#usage-command-line)
-- [Usage from continuous integration](#usage-ci)
+- [Super simple to use](#super-simple-to-use)
+- [Usage from command-line](#usage-from-command-line)
+- [Usage from continuous integration](#usage-from-continuous-integration)
 
 ---
 
