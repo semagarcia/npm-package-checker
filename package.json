@@ -7,6 +7,7 @@
     "email": "jmanuelgarciagarcia@gmail.com"
   },
   "description": "Module to check whether a component has been released with a specific version or not",
+  "main": "index.js",
   "keywords": [
     "command-line",
     "tool",
