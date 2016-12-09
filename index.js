@@ -1,5 +1,5 @@
-#!/usr/bin/env node
-
+#!/usr/bin/env node 
+'use strict';
 const request = require('request');
 const chalk = require('chalk');
 const argv = require('yargs')
