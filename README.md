@@ -56,26 +56,42 @@ After installing it (at the moment is only focused to use it from the terminal),
     ```bash
     $> npm-package-checker
     ```
+    ![npm-package-checker](https://github.com/semagarcia/npm-package-checker/blob/gh-pages/images/npm-cli-simple-usage.png "")
+    
   * Simple usage, tag published:
   
     ```bash
-    $> npm-package-checker --repoUrl 'https://www.npmjs.com/package/npm-package-checker' --tag '1.0.0' 
+    $> npm-package-checker --repoUrl 'http://registry.npmjs.org/npm-package-checker' --tag '1.0.0' -c
     ```
+    ![npm-package-checker](https://github.com/semagarcia/npm-package-checker/blob/gh-pages/images/cli-found-no-colors.png "")
+    
   * Simple usage, tag inexistent:
   
     ```bash
-    $> npm-package-checker --repoUrl 'https://www.npmjs.com/package/npm-package-checker' --tag '0.0.1' 
+    $> npm-package-checker --repoUrl 'http://registry.npmjs.org/npm-package-checker' --tag '0.0.1' 
     ```
+    ![npm-package-checker](https://github.com/semagarcia/npm-package-checker/blob/gh-pages/images/cli-not-found.png "")
+    
   * Enabling traces.
   
     ```bash
-    $> npm-package-checker --repoUrl 'https://www.npmjs.com/package/npm-package-checker' --tag '0.0.1' --debug
+    $> npm-package-checker --repoUrl 'http://registry.npmjs.org/npm-package-checker' --tag '0.0.1' --debug
     ```
+    ![npm-package-checker](https://github.com/semagarcia/npm-package-checker/blob/gh-pages/images/cli-not-found.png "")
+    
   * Enabling colors.
   
     ```bash
-    $> npm-package-checker --repoUrl 'https://www.npmjs.com/package/npm-package-checker' --tag '0.0.1' --debug --colors
+    $> npm-package-checker --repoUrl 'http://registry.npmjs.org/npm-package-checker' --tag '0.0.1' --debug --colors
     ``` 
+    ![npm-package-checker](https://github.com/semagarcia/npm-package-checker/blob/gh-pages/images/cli-not-found-colors.png "")
+    
+  * Component published, enabled colors.
+  
+    ```bash
+    $> npm-package-checker --repoUrl 'http://registry.npmjs.org/npm-package-checker' --tag '1.0.0' --colors
+    ``` 
+    ![npm-package-checker](https://github.com/semagarcia/npm-package-checker/blob/gh-pages/images/cli-found.png "")
 
 ---
 
