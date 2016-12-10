@@ -56,42 +56,42 @@ After installing it (at the moment is only focused to use it from the terminal),
     ```bash
     $> npm-package-checker
     ```
-    ![npm-package-checker](https://github.com/semagarcia/npm-package-checker/blob/gh-pages/images/npm-cli-simple-usage.png "")
+    ![npm-package-checker](https://raw.githubusercontent.com/semagarcia/npm-package-checker/gh-pages/images/npm-cli-simple-usage.png "")
     
   * Simple usage, tag published:
   
     ```bash
     $> npm-package-checker --repoUrl 'http://registry.npmjs.org/npm-package-checker' --tag '1.0.0' -c
     ```
-    ![npm-package-checker](https://github.com/semagarcia/npm-package-checker/blob/gh-pages/images/cli-found-no-colors.png "")
+    ![npm-package-checker](https://raw.githubusercontent.com/semagarcia/npm-package-checker/gh-pages/images/cli-found-no-colors.png "")
     
   * Simple usage, tag inexistent:
   
     ```bash
     $> npm-package-checker --repoUrl 'http://registry.npmjs.org/npm-package-checker' --tag '0.0.1' 
     ```
-    ![npm-package-checker](https://github.com/semagarcia/npm-package-checker/blob/gh-pages/images/cli-not-found.png "")
+    ![npm-package-checker](https://raw.githubusercontent.com/semagarcia/npm-package-checker/gh-pages/images/cli-not-found.png "")
     
   * Enabling traces.
   
     ```bash
     $> npm-package-checker --repoUrl 'http://registry.npmjs.org/npm-package-checker' --tag '0.0.1' --debug
     ```
-    ![npm-package-checker](https://github.com/semagarcia/npm-package-checker/blob/gh-pages/images/cli-not-found.png "")
+    ![npm-package-checker](https://raw.githubusercontent.com/semagarcia/npm-package-checker/gh-pages/images/cli-not-found.png "")
     
   * Enabling colors.
   
     ```bash
     $> npm-package-checker --repoUrl 'http://registry.npmjs.org/npm-package-checker' --tag '0.0.1' --debug --colors
     ``` 
-    ![npm-package-checker](https://github.com/semagarcia/npm-package-checker/blob/gh-pages/images/cli-not-found-colors.png "")
+    ![npm-package-checker](https://raw.githubusercontent.com/semagarcia/npm-package-checker/gh-pages/images/cli-not-found-colors.png "")
     
   * Component published, enabled colors.
   
     ```bash
     $> npm-package-checker --repoUrl 'http://registry.npmjs.org/npm-package-checker' --tag '1.0.0' --colors
     ``` 
-    ![npm-package-checker](https://github.com/semagarcia/npm-package-checker/blob/gh-pages/images/cli-found.png "")
+    ![npm-package-checker](https://raw.githubusercontent.com/semagarcia/npm-package-checker/gh-pages/images/cli-found.png "")
 
 ---
 
@@ -107,6 +107,14 @@ steps to integrate it are:
   2. Call the script directly (if it was installed globally) with specific params (in future versions this script could automatically search
     the package.json in order to extract the version of the component).
   3. Save and execute it!    
+
+Failed execution:
+
+![npm-package-checker](https://raw.githubusercontent.com/semagarcia/npm-package-checker/gh-pages/images/jenkins_fail.png "")
+
+Successful execution:
+
+![npm-package-checker](https://raw.githubusercontent.com/semagarcia/npm-package-checker/gh-pages/images/jenkins_ok.png "")
 
 ---
 
