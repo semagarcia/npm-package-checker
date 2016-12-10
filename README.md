@@ -52,22 +52,27 @@ Other parameters are:
 ## Example of usage from command-line
 After installing it (at the moment is only focused to use it from the terminal), choose from the following modes:
   * Simple usage, wrong usage:
+
     ```bash
     $> npm-package-checker
     ```
   * Simple usage, tag published:
+  
     ```bash
     $> npm-package-checker --repoUrl 'https://www.npmjs.com/package/npm-package-checker' --tag '1.0.0' 
     ```
   * Simple usage, tag inexistent:
+  
     ```bash
     $> npm-package-checker --repoUrl 'https://www.npmjs.com/package/npm-package-checker' --tag '0.0.1' 
     ```
   * Enabling traces.
+  
     ```bash
     $> npm-package-checker --repoUrl 'https://www.npmjs.com/package/npm-package-checker' --tag '0.0.1' --debug
     ```
   * Enabling colors.
+  
     ```bash
     $> npm-package-checker --repoUrl 'https://www.npmjs.com/package/npm-package-checker' --tag '0.0.1' --debug --colors
     ``` 
