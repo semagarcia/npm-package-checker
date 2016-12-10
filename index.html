@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>npm-package-checker by semagarcia</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/semagarcia/npm-package-checker">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>npm-package-checker</h1>
+            <h2>A command-line tool to verify if a package has been released in a repository</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/semagarcia/npm-package-checker/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/semagarcia/npm-package-checker/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="npm-package-checker" class="anchor" href="#npm-package-checker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>npm-package-checker</h1>
+
+<p>A command-line tool to verify if a package has been released in a repository (such as Nexus, Artifactory, ...).</p>
+
+<h2>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of contents</h2>
+
+<ul>
+<li><a href="#so-simple-to-use">So simple to use</a></li>
+<li><a href="#example-of-usage-from-command-line">Example of usage from command-line</a></li>
+<li><a href="#example-of-usage-from-continuous-integration">Example-of-usage from continuous integration</a></li>
+<li><a href="#future-features-or-improvements">Future features or improvements</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="so-simple-to-use" class="anchor" href="#so-simple-to-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>So simple to use</h2>
+
+<p>The <strong>npm-package-checker</strong> command utility has been designed to...</p>
+
+<h3>
+<a id="installing-from-npmjs-repository" class="anchor" href="#installing-from-npmjs-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing from npmjs repository</h3>
+
+<p>The first step (and my own advice) is to install it globally:</p>
+
+<div class="highlight highlight-source-shell"><pre>$<span class="pl-k">&gt;</span> npm install -g npm-package-checker</pre></div>
+
+<h3>
+<a id="executing-the-util" class="anchor" href="#executing-the-util" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Executing the util</h3>
+
+<p>In order to be able to execute it, write the following command:</p>
+
+<div class="highlight highlight-source-shell"><pre>$<span class="pl-k">&gt;</span> npm-package-checker</pre></div>
+
+<h3>
+<a id="specifying-parameters-mandatories-and-optionals" class="anchor" href="#specifying-parameters-mandatories-and-optionals" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Specifying parameters (mandatories and optionals)</h3>
+
+<p><strong>npm-package-checker</strong> has some parameters, which two of them are mandatories and the rest are optionals.</p>
+
+<h4>
+<a id="required-params" class="anchor" href="#required-params" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Required params</h4>
+
+<p>The required parameters are:</p>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th align="center">Short form</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>--repoUrl</td>
+<td align="center">-r</td>
+<td>The URL of NPM repository (Nexus, Artifactory...)</td>
+</tr>
+<tr>
+<td>--tag</td>
+<td align="center">-t</td>
+<td>The TAG of component to be checked if it has been published or not</td>
+</tr>
+</tbody>
+</table>
+
+<h4>
+<a id="optionals-params" class="anchor" href="#optionals-params" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Optionals params</h4>
+
+<p>The optionals parameters are:</p>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th align="center">Short form</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>--debug</td>
+<td align="center">-d</td>
+<td>Show detailed info about the progress</td>
+</tr>
+<tr>
+<td>--colors</td>
+<td align="center">-c</td>
+<td>Show color traces</td>
+</tr>
+</tbody>
+</table>
+
+<h4>
+<a id="other-params" class="anchor" href="#other-params" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other params</h4>
+
+<p>Other parameters are:</p>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th align="center">Short form</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>--help</td>
+<td align="center">-h</td>
+<td>Show command-util help</td>
+</tr>
+<tr>
+<td>--version</td>
+<td align="center"></td>
+<td>Show version number</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<h2>
+<a id="example-of-usage-from-command-line" class="anchor" href="#example-of-usage-from-command-line" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example of usage from command-line</h2>
+
+<p>After installing it (at the moment is only focused to use it from the terminal), choose from the following modes:</p>
+
+<ul>
+<li>
+<p>Simple usage, wrong usage:</p>
+
+<div class="highlight highlight-source-shell"><pre>$<span class="pl-k">&gt;</span> npm-package-checker</pre></div>
+</li>
+<li>
+<p>Simple usage, tag published:</p>
+
+<div class="highlight highlight-source-shell"><pre>$<span class="pl-k">&gt;</span> npm-package-checker --repoUrl <span class="pl-s"><span class="pl-pds">'</span>https://www.npmjs.com/package/npm-package-checker<span class="pl-pds">'</span></span> --tag <span class="pl-s"><span class="pl-pds">'</span>1.0.0<span class="pl-pds">'</span></span> </pre></div>
+</li>
+<li>
+<p>Simple usage, tag inexistent:</p>
+
+<div class="highlight highlight-source-shell"><pre>$<span class="pl-k">&gt;</span> npm-package-checker --repoUrl <span class="pl-s"><span class="pl-pds">'</span>https://www.npmjs.com/package/npm-package-checker<span class="pl-pds">'</span></span> --tag <span class="pl-s"><span class="pl-pds">'</span>0.0.1<span class="pl-pds">'</span></span> </pre></div>
+</li>
+<li>
+<p>Enabling traces.</p>
+
+<div class="highlight highlight-source-shell"><pre>$<span class="pl-k">&gt;</span> npm-package-checker --repoUrl <span class="pl-s"><span class="pl-pds">'</span>https://www.npmjs.com/package/npm-package-checker<span class="pl-pds">'</span></span> --tag <span class="pl-s"><span class="pl-pds">'</span>0.0.1<span class="pl-pds">'</span></span> --debug</pre></div>
+</li>
+<li>
+<p>Enabling colors.</p>
+
+<div class="highlight highlight-source-shell"><pre>$<span class="pl-k">&gt;</span> npm-package-checker --repoUrl <span class="pl-s"><span class="pl-pds">'</span>https://www.npmjs.com/package/npm-package-checker<span class="pl-pds">'</span></span> --tag <span class="pl-s"><span class="pl-pds">'</span>0.0.1<span class="pl-pds">'</span></span> --debug --colors</pre></div>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="example-of-usage-from-continuous-integration" class="anchor" href="#example-of-usage-from-continuous-integration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example of usage from continuous integration</h2>
+
+<p>To take advantage of that use, you could integrate this powerful script into your CI server (for instance, Jenkins, Travis, Go...). If
+you are publishing frontend components (not necessarily web components) in a repository (Nexus, Artifactory or even in npmjs repo), one
+step before of that could be the check if the current version of its package.json has been upgraded correctly (useful when the policy is to
+avoid override the same version; instead of that, the developer always have to increment, at least, the patch version).</p>
+
+<p>That script, in a few words, will check if the version that you are trying to publish exists or not in the repo, stopping the process. The 
+steps to integrate it are:</p>
+
+<ol>
+<li>Add "Execute from the command line (shell)" in the desired job.</li>
+<li>Call the script directly (if it was installed globally) with specific params (in future versions this script could automatically search
+the package.json in order to extract the version of the component).</li>
+<li>Save and execute it!<br>
+</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="future-features-or-improvements" class="anchor" href="#future-features-or-improvements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Future features or improvements</h2>
+
+<p>That feature list will be populated with comments, suggestions and requests of the community.</p>
+
+<ul>
+<li>[x] Initial version: check if a version has been released in a repo.</li>
+<li>[ ] Search and extract automatically the version of package.json.</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>If you are interested to contribute with that project, you could perform it via:</p>
+
+<ul>
+<li>Opening an issue.</li>
+<li>Pull Request.</li>
+<li>Writing me.</li>
+</ul>
+
+<hr>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/semagarcia">semagarcia</a> can be found on <a href="https://github.com/semagarcia/npm-package-checker">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
